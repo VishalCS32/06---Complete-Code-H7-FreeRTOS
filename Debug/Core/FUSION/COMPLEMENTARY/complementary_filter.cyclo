@@ -1,0 +1,8 @@
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:6:6:Normalize_Vector	2
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:15:13:Normalize_Quaternion	1
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:23:19:Quaternion_Multiply	1
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:32:13:Integrate_Gyro	1
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:49:19:Accel_To_Quaternion	1
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:66:6:ComplementaryFilter_Init	1
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:73:6:ComplementaryFilter_Update	1
+../Core/FUSION/COMPLEMENTARY/complementary_filter.c:93:6:Quaternion_ToEuler	1

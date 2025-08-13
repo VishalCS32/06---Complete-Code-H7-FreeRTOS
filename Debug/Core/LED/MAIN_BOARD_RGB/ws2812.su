@@ -1,0 +1,8 @@
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:24:20:swap_buffers	16	static
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:30:6:WS2812_Init	24	static
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:37:6:WS2812_SetGlobalBrightness	16	static
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:43:6:main_led	32	static
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:55:13:encode_leds_to_pwm	40	static
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:73:6:main_led_update	8	static
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:93:6:main_led_PWM_Callback	24	static,ignoring_inline_asm
+../Core/LED/MAIN_BOARD_RGB/ws2812.c:111:6:WS2812_Task	16	static
