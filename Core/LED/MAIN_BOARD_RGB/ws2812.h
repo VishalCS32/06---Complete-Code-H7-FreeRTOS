@@ -1,8 +1,8 @@
 /*
  * ws2812.h
  *
- *  Created on: May 18, 2025
- *      Author: vishal
+ * Created on: May 18, 2025
+ * Author: vishal
  */
 
 #ifndef WS2812_H
@@ -11,6 +11,7 @@
 #include "stm32h7xx_hal.h"
 #include "FreeRTOS.h"
 #include "semphr.h"
+#include "task.h"
 
 #define LED_COUNT 1
 #define BITS_PER_LED 24
@@ -20,6 +21,7 @@
 #define DUTY_RESET 0
 
 extern SemaphoreHandle_t ws2812_dma_semaphore;
+extern TaskHandle_t ws2812_task_handle;
 
 void WS2812_Init(TIM_HandleTypeDef *htim);
 void WS2812_SetColor(uint32_t led_index, uint8_t red, uint8_t green, uint8_t blue, float brightness);
@@ -28,5 +30,6 @@ void WS2812_Send(void);
 void main_led(uint32_t led_index, uint8_t red, uint8_t green, uint8_t blue, float brightness);
 void main_led_update(void);
 void main_led_PWM_Callback(TIM_HandleTypeDef *htim);
+void WS2812_Task(void *argument);
 
 #endif
